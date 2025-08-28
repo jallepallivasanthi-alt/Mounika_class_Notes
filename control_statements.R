@@ -95,3 +95,6 @@ df=data.frame(id=c(11,22,33,44,55),
 print(df)
 #create a column online_source using price greater than 500 assign value amazon if not flipkart
 df$online_source<-ifelse(df$price>500&df$pages<30,'amazon',"flipkart")
+df_dataset <- df %>%
+  mutate(offer= if_else( df$price>500,"Yes", "No"))
+df_dataset
