@@ -21,3 +21,4 @@ person<-function(name,chapters,pages,offer){
   print(ex)
 }
 person(df_dataset[3][2,],df_dataset[4][3,],df_dataset[2][5,],df_dataset[7][1,])
+#
